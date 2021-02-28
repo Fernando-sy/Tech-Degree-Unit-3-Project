@@ -22,18 +22,151 @@ header h1 {
     color:white;
 }
 
+legend{
+    padding:20px;
+    font-weight:bold;
+    font-size:24;
+}
+
 .container{
     padding:5%;
 }
 
 .section-1 {
     text-align: center;
+    margin-bottom:25px;
 }
 
 .border {
     height:auto;
     width:100%;
-    border-top:3px solid black;
-    border-bottom:1px solid black;
+    border-top:3px solid rgb(44,59,71);
+    border-bottom:1px solid rgb(44,59,71);
     padding:2.5px;
 }
+
+.top-form-part label{
+    display:block;
+    margin-bottom:5px;
+    margin-top:10px;
+}
+
+.top-form-part input,
+.top-form-part select{
+    width:90%;
+    padding: 15px;
+    border:none;
+    border-radius:5px;
+    background: rgb(229,223,233);
+}
+
+.top-form-part select{
+    max-width:100%;
+    width:100%;
+    color: rgb(134,134,134);
+}
+
+input{
+    text-align:left;
+    transition-duration:.5s;
+}
+
+::-webkit-input-placeholder{
+    font-style:italic;
+    padding-right:3px;
+}
+
+:-moz-placeholder{
+    font-style:itallic;
+    padding-right:3px;  
+}
+
+::-moz-placeholder{
+    font-style:itallic;
+    padding-right:3px;  
+}
+
+:-ms-input-placeholder{
+    font-style:itallic;
+    padding-right:3px;  
+}
+
+input:focus{
+    border:solid 2px lightblue;
+    transform:scale(1.1);
+}
+
+hr{
+    border:solid black 1px;
+}
+
+.bottom-form-part label {
+    margin-left:10px;
+    margin-bottom:10px;
+    display:inline-block;
+}
+
+.txt-area{
+    margin-top:10px;
+    margin-bottom:25px;
+}
+
+textarea {
+    max-width:100%;
+    border:none;
+    border-radius:5px;
+    background: rgb(229,233,233)
+}
+
+button {
+border:none;
+color:white;
+padding:25px 0;
+font-size:24px;
+border-radius:5px;
+width:100%;
+background: rgb(50,203,171)
+}
+
+.copy{
+    text-align:center;
+}
+
+.container{
+    background:rgb(255,236,133)
+}
+
+fieldset{
+    border:none;
+}
+
+@media screen and (min-width:768px) {
+    .top-form-part label{
+        display:inline-block;
+    }
+
+
+.container {
+    width:50px;
+    margin:auto;
+    padding-top:50px;
+}
+.top-form-part input, .top-form-part select{
+    width:70%;
+    }
+    
+    .input-section{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        }
+        
+    .top-form-part select{
+        box-sizing: content-box;
+    }
+    
+    }
+
+
+
+
